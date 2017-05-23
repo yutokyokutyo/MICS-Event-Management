@@ -7,13 +7,16 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
     <![endif]-->
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <header>
+    <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
       <%= link_to "MICS", '/', id: "logo" %>
       <nav>
-        <ul>
+        <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "代表より", '/static_pages/message' %></li>
           <li><%= link_to "インタビュー", '/static_pages/interview' %></li>
           <li><%= link_to "ふぉと", '/static_pages/photo' %></li>
