@@ -1,12 +1,12 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 <div class="container">
-  <%= link_to "MICS", '/', id: "logo" %>
+  <%= link_to "MICS", root_path, id: "logo" %>
   <nav>
     <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "代表より", '/static_pages/message' %></li>
-      <li><%= link_to "インタビュー", '/static_pages/interview' %></li>
-      <li><%= link_to "ふぉと", '/static_pages/photo' %></li>
-      <li><%= link_to "応募", '/static_pages/join' %></li>
+      <li><%= link_to "代表より", message_path %></li>
+      <li><%= link_to "インタビュー", interview_path %></li>
+      <li><%= link_to "ふぉと", photo_path %></li>
+      <li><%= link_to "応募", join_path %></li>
       <li><%= link_to "ログイン", '#' %></li>
     </ul>
   </nav>
