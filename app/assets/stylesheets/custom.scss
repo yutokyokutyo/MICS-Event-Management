@@ -110,16 +110,19 @@ footer {
     border-top: 1px solid #e8e8e8;
   }
   .title {
+    font-size: 1.8em;
     margin-top: 5em;
     padding-top: 0;
   }
   .sub_title {
-    margin-top: 5em;
-    padding-top: 0;
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
   }
   .location {
-    margin-top: 5em;
-    padding-top: 0;
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
   }
   .description {
     margin-left: 60px;
@@ -129,12 +132,7 @@ footer {
       padding: 5px 0;
     }
   }
-  .start_time {
-    color: $gray-light;
-    display: block;
-    margin-left: 60px;
-  }
-  .end_time {
+  .time {
     color: $gray-light;
     display: block;
     margin-left: 60px;
