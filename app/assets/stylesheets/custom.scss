@@ -90,3 +90,73 @@ footer {
   border-top: 1px solid #eaeaea;
   color: #777;
 }
+
+/* --------------------------------
+ * events
+ * -------------------------------- */
+.events {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 100px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .title {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .sub_title {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .location {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .sub_title {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .description {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .start_time {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .end_time {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .capacity {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .image_url {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
