@@ -1,2 +1,0 @@
-class MicropostsController < ApplicationController
-end
