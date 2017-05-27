@@ -98,7 +98,7 @@ footer {
   list-style: none;
   padding: 0;
   li {
-    padding: 100px 0;
+    padding: 10px 0;
     border-top: 1px solid #e8e8e8;
   }
   .title {
@@ -113,13 +113,9 @@ footer {
     margin-top: 5em;
     padding-top: 0;
   }
-  .sub_title {
-    margin-top: 5em;
-    padding-top: 0;
-  }
   .description {
-    display: block;
     margin-left: 60px;
+    display: block;
     img {
       display: block;
       padding: 5px 0;
@@ -142,6 +138,7 @@ footer {
   }
   .image_url {
     float: left;
+    display: block;
     margin-right: 10px;
     margin-top: 5px;
   }
@@ -154,8 +151,8 @@ aside {
   }
 }
 
-span.picture {
-  margin-top: 10px;
+span.image_url {
+  margin-top: 100px;
   input {
     border: 0;
   }

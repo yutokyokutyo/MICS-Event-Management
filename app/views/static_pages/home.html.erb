@@ -15,11 +15,13 @@
 <%= link_to image_tag("mics_logo.png", alt: "MICS logo"),
     'https://mics-nagoya.jimdo.com/' %>
 
-<div class="col-md-8">
-  <h3>イベント一覧</h3>
-  <ol class="events">
-    <%= render @events %>
-  </ol>
+<div class="row">
+  <div class="col-md-12">
+    <h3>イベント一覧</h3>
+    <ol class="events">
+      <%= render @events %>
+    </ol>
+  </div>
 </div>
 
 <h3>活動内容</h3>

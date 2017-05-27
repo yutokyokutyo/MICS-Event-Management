@@ -1,12 +1,12 @@
 <li id="events-<%= event.id %>">
-    <span class="title"><%= event.title %></span>
-    <span class="sub_title"><%= event.sub_title %></span>
-    <span class="location"><%= event.location %></span>
-    <span class="description"><%= event.description %></span>
-    <span class="image_url">
-      <%= event.image_url || image_tag("mics_logo.png", alt: "default image") %>
-    </span>
-    <span class="start_time"><%= event.start_time %></span>
-    <span class="end_time"><%= event.end_time %></span>
-    <span class="capacity"><%= event.capacity %></span>
+  <span class="image_url">
+      <%= event.image_url || image_tag("mics_logo.png", alt: "default image", size: "90x90") %>
+  </span>
+  <span class="title"><%= event.title %></span>
+  <span class="sub_title"><%= event.sub_title %></span>
+  <span class="location"><%= event.location %></span>
+  <span class="description"><%= event.description %></span>
+  <span class="start_time"><%= event.start_time %></span>
+  <span class="end_time"><%= event.end_time %></span>
+  <span class="capacity"><%= event.capacity %></span>
 </li>
