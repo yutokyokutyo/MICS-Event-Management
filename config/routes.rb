@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'events/new'
+
   root 'static_pages#home'
   get  '/message', to: 'static_pages#message'
   get  '/interview', to: 'static_pages#interview'
