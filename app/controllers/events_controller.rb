@@ -5,7 +5,6 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(params[:id])
-    binding.pry
     if @event.save
       flash[:success] = "イベントを作成しました😆"
       redirect_to root_url
