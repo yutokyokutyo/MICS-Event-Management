@@ -1,6 +1,6 @@
 <li id="events-<%= event.id %>">
   <span class="image_url">
-      <%= event.image_url || image_tag("mics_logo.png", alt: "default image", size: "110x110") %>
+    <%= image_tag("mics_logo.png", alt: "default image", size: "110x110") if event.image_url.empty? %>
   </span>
   <span class="title"><%= event.title %></span>
   <span class="sub_title"><%= event.sub_title %></span>
