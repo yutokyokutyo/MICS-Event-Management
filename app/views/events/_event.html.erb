@@ -1,12 +1,15 @@
 <li id="events-<%= event.id %>">
   <span class="image_url">
-      <%= event.image_url || image_tag("mics_logo.png", alt: "default image", size: "110x110") %>
+    <%= image_tag("mics_logo.png", alt: "default image", size: "110x110") if event.image_url.empty? %>
   </span>
   <span class="title"><%= event.title %></span>
   <span class="sub_title"><%= event.sub_title %></span>
   <span class="location"><%= event.location %></span>
+  <% if event.start_time.nil? %>
+  <% else %>
   <span class="time">
   <%= event.start_time.strftime("%m/%d %H:%M") %> ~ <%= event.end_time.strftime("%H:%M") %>
   </span>
+  <% end %>
   <span class="capacity">0/<%= event.capacity %>人</span>
 </li>

@@ -1,7 +1,7 @@
 class CreateEvents < ActiveRecord::Migration[5.0]
   def change
     create_table :events do |t|
-      t.text :title
+      t.text :title,  null: false
       t.text :sub_title
       t.text :description
       t.string :location
