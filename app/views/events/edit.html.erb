@@ -9,6 +9,24 @@
       <%= f.label :sub_title %>
       <%= f.text_field :sub_title, class: 'form-control' %>
 
+      <%= f.label :description %>
+      <%= f.text_field :description, class: 'form-control' %>
+
+      <%= f.label :location %>
+      <%= f.text_field :location, class: 'form-control' %>
+
+      <%= f.label :image_url %>
+      <%= f.text_field :image_url, class: 'form-control' %>
+
+      <%= f.label :start_time %>
+      <%= f.datetime_field :start_time, class: 'form-control' %>
+
+      <%= f.label :end_time %>
+      <%= f.datetime_field :end_time, class: 'form-control' %>
+
+      <%= f.label :capacity %>
+      <%= f.number_field :capacity, class: 'form-control' %>
+
       <%= f.submit "更新", class: "btn btn-primary" %>
     <% end %>
   </div>
