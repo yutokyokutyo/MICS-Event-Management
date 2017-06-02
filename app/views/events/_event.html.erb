@@ -12,5 +12,9 @@
   </span>
   <% end %>
   <span class="capacity">0/<%= event.capacity %>人</span>
-  <span class="update"> <%= link_to "編集する", edit_event_path(event) %></span>
+  <span class="update"><%= link_to "編集する", edit_event_path(event) %></span>
+  <span class="delete">
+    <%= link_to "削除する", event, method: :delete,
+                data: { confirm: "ホントに削除してもいいですか？😉" }%>
+  </span>
 </li>
