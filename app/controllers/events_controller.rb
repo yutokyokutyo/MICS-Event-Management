@@ -13,6 +13,20 @@ class EventsController < ApplicationController
     end
   end
 
+  def edit
+    @event = Event.find(params[:id])
+  end
+
+  def update
+    @event = Event.find(params[:id])
+    if @event.update_attributes(event_params)
+      flash[:success] = "イベント情報を更新しました😆"
+      redirect_to event_manage_path
+    else
+      render 'edit'
+    end
+  end
+
   private
 
   def event_params

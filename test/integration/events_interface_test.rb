@@ -3,6 +3,7 @@ require 'test_helper'
 class EventsInterfaceTest < ActionDispatch::IntegrationTest
 
   test "event interface" do
+    # イベント作成
     get new_event_path
     assert_select 'input[type="submit"]'
     title = "Sportsday"
@@ -22,6 +23,19 @@ class EventsInterfaceTest < ActionDispatch::IntegrationTest
                             capacity: capacity } }
     end
     assert_redirected_to root_url
+    follow_redirect!
+    assert_match title, response.body
+    # イベント更新
+    get edit_event_path(events(:one))
+    assert_select 'input[type="submit"]'
+    patch event_path(events(:one)), event: { title: title,
+                            sub_title: sub_title,
+                            description: description,
+                            location: location,
+                            start_time: start_time,
+                            end_time: end_time,
+                            capacity: capacity }
+    assert_redirected_to event_manage_path
     follow_redirect!
     assert_match title, response.body
   end
