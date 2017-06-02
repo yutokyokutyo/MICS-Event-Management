@@ -14,4 +14,8 @@ class StaticPagesController < ApplicationController
 
   def join
   end
+
+  def event_manage
+    @events = Event.all
+  end
 end
