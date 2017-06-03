@@ -40,8 +40,8 @@ class EventsInterfaceTest < ActionDispatch::IntegrationTest
     assert_match title, response.body
     # イベントを削除
     get event_manage_path
-    assert_select 'a', text: 'delete'
-    assert_defference 'Event.count', -1 do
+    assert_select 'a', text: '削除する'
+    assert_difference 'Event.count', -1 do
       delete event_path(Event.first)
     end
   end
