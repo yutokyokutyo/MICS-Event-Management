@@ -19,3 +19,6 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# 開発環境で生成した画像
+public/uploads/*
