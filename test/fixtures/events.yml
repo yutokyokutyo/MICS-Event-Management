@@ -3,7 +3,7 @@ one:
   sub_title: MyText
   description: MyText
   location: MyString
-  image_url: MyString
+  picture: MyString
   start_time: 2017-05-27 17:22:46
   end_time: 2017-05-27 17:22:46
   capacity: 1
@@ -14,7 +14,7 @@ two:
   sub_title: MyText
   description: MyText
   location: MyString
-  image_url: MyString
+  picture: MyString
   start_time: 2017-05-27 17:22:46
   end_time: 2017-05-27 17:22:46
   capacity: 1
@@ -25,7 +25,7 @@ most_recent:
   sub_title: recent_sub_title
   description: recent_description
   location: recent_location
-  image_url: recent_image_url
+  picture: recent_picture
   start_time: <%= Time.zone.now %>
   end_time: <%= Time.zone.now %>
   capacity: 10
