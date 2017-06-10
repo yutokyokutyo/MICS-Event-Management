@@ -18,7 +18,7 @@
             <li><%= link_to "プロフィール", user_registration_path(current_user) %></li>
             <li><%= link_to "設定", edit_user_registration_path(current_user) %></li>
             <li class="divider"></li>
-            <li><%= link_to "ログアウト", destroy_user_session_path %></li>
+            <li><%= link_to "ログアウト", destroy_user_session_path, method: "delete" %></li>
           </ul>
         </li>
       <% else %>
