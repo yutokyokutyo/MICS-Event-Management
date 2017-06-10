@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+  }
   root 'static_pages#home'
   get  '/message', to: 'static_pages#message'
   get  '/interview', to: 'static_pages#interview'
