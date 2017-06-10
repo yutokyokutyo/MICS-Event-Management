@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'static_pages#home'
   get  '/message', to: 'static_pages#message'
   get  '/interview', to: 'static_pages#interview'
