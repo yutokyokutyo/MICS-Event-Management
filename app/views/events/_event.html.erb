@@ -6,7 +6,7 @@
     <%= image_tag("mics_logo.png", alt: "default image", size: "110x110") %>
   <% end %>
   </span>
-  <span class="title"><%= event.title %></span>
+  <span class="title"><%= link_to event.title, event_path(event) %></span>
   <span class="sub_title"><%= event.sub_title %></span>
   <span class="location"><%= event.location %></span>
   <% if event.start_time.nil? %>
