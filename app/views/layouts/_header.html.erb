@@ -6,7 +6,6 @@
       <li><%= link_to "代表より", message_path %></li>
       <li><%= link_to "インタビュー", interview_path %></li>
       <li><%= link_to "ふぉと", photo_path %></li>
-      <li><%= link_to "応募", join_path %></li>
       <% if user_signed_in? %>
         <li><%= link_to "イベント作成", new_event_path %></li>
         <li><%= link_to "イベント管理", event_manage_path %></li>
@@ -22,6 +21,7 @@
           </ul>
         </li>
       <% else %>
+        <li><%= link_to "応募", join_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             MICSする <b class="caret"></b>
