@@ -1,0 +1,14 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1><%= @user.name %></h1>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <ol class="events">
+      <%# このユーザーが参加したイベント %>
+      <%# このユーザーが作成したイベント %>
+    </ol>
+  </div>
+</div>
