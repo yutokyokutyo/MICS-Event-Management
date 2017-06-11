@@ -34,6 +34,10 @@ class EventsController < ApplicationController
     redirect_to request.referrer || event_manage_path
   end
 
+  def show
+    @event = Event.find(params[:id])
+  end
+
   private
 
   def event_params
