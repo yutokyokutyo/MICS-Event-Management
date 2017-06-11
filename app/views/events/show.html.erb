@@ -1,0 +1,14 @@
+<h1><%= @event.title %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <p><%= @event.title %></p>
+    <p><%= @event.sub_title %></p>
+    <p><%= image_tag @event.picture.url %></p>
+    <p><%= @event.description %></p>
+    <p><%= @event.location %></p>
+    <p><%= @event.start_time %></p>
+    <p><%= @event.end_time %></p>
+    <p><%= @event.capacity %></p>
+  </div>
+</div>

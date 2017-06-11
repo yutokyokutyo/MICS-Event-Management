@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get  '/photo', to: 'static_pages#photo'
   get  '/join', to: 'static_pages#join'
   get  '/event_manage', to: 'static_pages#event_manage'
-  resources :events, only: [:new, :create, :edit, :update, :destroy]
+  resources :events, only: [:new, :create, :edit, :update, :destroy, :show]
   resources :users, only: [:index, :show]
 end
