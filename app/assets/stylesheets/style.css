@@ -104,7 +104,7 @@ body {
  * -------------------------------- */
 .event {
   padding: 80px 30px;
-  background-color: #fff;
+  background-color: transparent;
   color: #333;
 }
 .event-text {
