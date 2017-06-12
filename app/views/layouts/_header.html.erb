@@ -1,38 +1,47 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-<div class="container">
-  <%= link_to "MICS", root_path, id: "logo" %>
-  <nav>
-    <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "代表より", message_path %></li>
-      <li><%= link_to "インタビュー", interview_path %></li>
-      <li><%= link_to "ふぉと", photo_path %></li>
-      <% if user_signed_in? %>
-        <li><%= link_to "イベント作成", new_event_path %></li>
-        <li><%= link_to "イベント管理", event_manage_path %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            アカウント <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "プロフィール", user_path(current_user) %></li>
-            <li><%= link_to "設定", edit_user_registration_path(user_session) %></li>
-            <li class="divider"></li>
-            <li><%= link_to "ログアウト", destroy_user_session_path, method: "delete" %></li>
-          </ul>
-        </li>
-      <% else %>
-        <li><%= link_to "応募", join_path %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            MICSする <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "ログイン", new_user_session_path %></li>
-            <li><%= link_to "ユーザー登録", new_user_registration_path %></li>
-          </ul>
-        </li>
-      <% end %>
-    </ul>
-  </nav>
-</div>
+  <div class="container">
+    <%= link_to "MICS", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "代表より", message_path %></li>
+        <li><%= link_to "インタビュー", interview_path %></li>
+        <li><%= link_to "ふぉと", photo_path %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "イベント作成", new_event_path %></li>
+          <li><%= link_to "イベント管理", event_manage_path %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              アカウント <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "プロフィール", user_path(current_user) %></li>
+              <li><%= link_to "設定", edit_user_registration_path(user_session) %></li>
+              <li class="divider"></li>
+              <li><%= link_to "ログアウト", destroy_user_session_path, method: "delete" %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to "応募", join_path %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              MICSする <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "ログイン", new_user_session_path %></li>
+              <li><%= link_to "ユーザー登録", new_user_registration_path %></li>
+            </ul>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+    <p class="site-title-sub">愛知メモリアルスポーツサークル</p>
+    <h1 class="site-title">MICS</h1>
+    <p class="site-description">運動を全力で楽しみ最高の仲間を作る</p>
+    <div class="buttons">
+      <a class="button" href="#about">LEARN MORE</a>
+      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+    </div>
+  </div>
 </header>
