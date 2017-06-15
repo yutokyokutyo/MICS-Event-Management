@@ -6,10 +6,12 @@
     </section>
   </aside>
   <div class="col-md-8">
+    <% if @user.events.any? %>
     <ol class="events">
-      <%# このユーザーが参加したイベント %>
-      <%# このユーザーが作成したイベント %>
+      <%= render @events %>
     </ol>
+      <%= will_paginate @events %>
+    <% end %>
   </div>
 </div>
 
