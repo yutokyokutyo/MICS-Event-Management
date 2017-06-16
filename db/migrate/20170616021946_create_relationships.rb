@@ -6,5 +6,8 @@ class CreateRelationships < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+    add_index :relationships, join_id
+    add_index :relationships, joined_id
+    add_index :relationships, [:join_id, :joined_id], unique: true
   end
 end
