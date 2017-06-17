@@ -2,6 +2,8 @@
 
 one:
   join_id: 1
+  joined_id: 1
 
 two:
   join_id: 1
+  joined_id: 1

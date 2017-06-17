@@ -1,6 +1,6 @@
 class RelationshipsController < ApplicationController
   def create
-    event = Event.find(params[:join_id])
+    event = Event.find(params[:joined_id])
     current_user.join(event)
     redirect_to event
   end
