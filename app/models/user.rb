@@ -11,17 +11,17 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   # イベントに参加する
-  def join(event)
-    active_relationships.create(joined_id: event.id)
+  def join(user)
+    active_relationships.create(joined_id: user.id)
   end
 
   # イベント参加キャンセルする
-  def unjoin(event)
-    active_relationships.find_by(joined_id: event.id).destroy
+  def unjoin(user)
+    active_relationships.find_by(joined_id: user.id).destroy
   end
 
   # 現在のユーザーがイベント参加していたらtrueを返す
-  def join?(event)
-    following.include?(event)
+  def joining?(user)
+    join.include?(user)
   end
 end
