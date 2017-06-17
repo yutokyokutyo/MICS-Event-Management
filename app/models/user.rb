@@ -1,5 +1,8 @@
 class User < ApplicationRecord
   has_many :events
+  has_many :active_relationships, class_name:  "Relationship",
+                                  foreign_key: "join_id",
+                                  dependent:   :destroy
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
