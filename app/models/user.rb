@@ -3,7 +3,11 @@ class User < ApplicationRecord
   has_many :active_relationships, class_name:  "Relationship",
                                   foreign_key: "join_id",
                                   dependent:   :destroy
+  has_many :passive_relationships, class_name:  "Relationship",
+                                   foreign_key: "joined_id",
+                                   dependent:   :destroy
   has_many :join, through: :active_relationships
+  has_many :joined, through: :passive_relationships
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
