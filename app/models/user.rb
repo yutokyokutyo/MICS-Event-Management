@@ -12,12 +12,12 @@ class User < ApplicationRecord
 
   # イベントに参加する
   def join(user)
-    active_relationships.create(joined_id: user.id)
+    active_relationships.create(join_id: user.id)
   end
 
   # イベント参加キャンセルする
   def unjoin(user)
-    active_relationships.find_by(joined_id: user.id).destroy
+    active_relationships.find_by(join_id: user.id).destroy
   end
 
   # 現在のユーザーがイベント参加していたらtrueを返す
