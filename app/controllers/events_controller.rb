@@ -38,6 +38,13 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
+  def joiners
+    @title = "イベント参加者"
+    @event  = Event.find(params[:id])
+    @events = @event.joiners.paginate(page: params[:page])
+    render 'show_join'
+  end
+
   private
 
   def event_params
