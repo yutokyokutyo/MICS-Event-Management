@@ -30,12 +30,9 @@ ActiveRecord::Schema.define(version: 20170616021946) do
 
   create_table "relationships", force: :cascade do |t|
     t.integer  "join_id"
-    t.integer  "joined_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["join_id", "joined_id"], name: "index_relationships_on_join_id_and_joined_id", unique: true
     t.index ["join_id"], name: "index_relationships_on_join_id"
-    t.index ["joined_id"], name: "index_relationships_on_joined_id"
   end
 
   create_table "users", force: :cascade do |t|
