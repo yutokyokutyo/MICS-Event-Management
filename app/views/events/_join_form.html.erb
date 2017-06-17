@@ -1,4 +1,7 @@
 <div id="join_form">
-  <%= render 'unjoin' %>
-  <%= render 'join' %>
+  <% if current_user.joining?(@event) %>
+    <%= render 'unjoin' %>
+  <% else %>
+    <%= render 'join' %>
+  <% end %>
 </div>
