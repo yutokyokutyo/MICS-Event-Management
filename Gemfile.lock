@@ -209,8 +209,10 @@ GEM
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     formatador (0.2.5)
+    geocoder (1.4.4)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    gmaps4rails (2.1.2)
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -382,6 +384,8 @@ DEPENDENCIES
   devise (= 4.2.0)
   faker (= 1.6.6)
   fog (= 1.38.0)
+  geocoder
+  gmaps4rails
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.4.1)
@@ -407,4 +411,4 @@ DEPENDENCIES
   will_paginate (= 3.1.0)
 
 BUNDLED WITH
-   1.15.0
+   1.15.1
