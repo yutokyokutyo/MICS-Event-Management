@@ -5,11 +5,21 @@
   <div class="col-md-6 col-md-offset-3">
     <p><%= @event.title %></p>
     <p><%= @event.sub_title %></p>
-    <p><%= image_tag @event.picture.url %></p>
+    <% if @event.picture.url.nil? %>
+    <% else %>
+      <p><%= image_tag @event.picture.url %></p>
+    <% end %>
     <p><%= @event.description %></p>
     <p><%= @event.location %></p>
     <p><%= @event.start_time %></p>
     <p><%= @event.end_time %></p>
     <p><%= @event.capacity %></p>
+  </div>
+
+  <div class="col-md-8">
+    <ol class="users">
+      <%= render @joiners %>
+    </ol>
+      <%= will_paginate @joiners %>
   </div>
 </div>
