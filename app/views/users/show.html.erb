@@ -13,13 +13,11 @@
       <%= will_paginate @events %>
     <% end %>
   </div>
-
   <div class="col-md-8">
-    <ol class="joining-events">
+    <ol class="events">
       <%= render @joining_events %>
     </ol>
-      <%= will_paginate @events %>
-  </div>
+      <%= will_paginate @joining_events %>
   </div>
 </div>
 
