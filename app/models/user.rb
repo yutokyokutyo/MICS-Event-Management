@@ -22,6 +22,6 @@ class User < ApplicationRecord
 
   # 現在のユーザーがイベント参加していたらtrueを返す
   def joining?(event)
-    join.include?(event)
+    joining.include?(event)
   end
 end
