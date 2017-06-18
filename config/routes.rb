@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get  '/event_manage', to: 'static_pages#event_manage'
   resources :events, only: [:new, :create, :edit, :update, :destroy, :show]
   resources :users, only: [:index, :show]
+  resources :relationships,       only: [:create, :destroy]
 end
