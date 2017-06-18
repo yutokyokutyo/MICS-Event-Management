@@ -15,4 +15,11 @@
     <p><%= @event.end_time %></p>
     <p><%= @event.capacity %></p>
   </div>
+
+  <div class="col-md-8">
+    <ol class="users">
+      <%= render @joiners %>
+    </ol>
+      <%= will_paginate @joiners %>
+  </div>
 </div>
