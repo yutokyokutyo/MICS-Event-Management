@@ -13,6 +13,14 @@
       <%= will_paginate @events %>
     <% end %>
   </div>
+
+  <div class="col-md-8">
+    <ol class="joining-events">
+      <%= render @joining_events %>
+    </ol>
+      <%= will_paginate @events %>
+  </div>
+  </div>
 </div>
 
 <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bluebird14141414%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FTokyo" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
