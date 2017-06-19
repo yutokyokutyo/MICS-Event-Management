@@ -5,6 +5,8 @@ class Event < ApplicationRecord
                                    dependent:   :destroy
   has_many :joiners, through: :passive_relationships, source: :join
   validates :user_id, presence: true
+  geocoded_by :location
+  after_validation :geocode
   default_scope -> { order(created_at: :desc) }
   mount_uploader :picture, PictureUploader
   validate  :picture_size
