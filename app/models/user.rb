@@ -5,10 +5,8 @@ class User < ApplicationRecord
                                   dependent:   :destroy
   has_many :joining, through: :active_relationships, source: :joined
 
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   # イベントに参加する
   def join(event)
