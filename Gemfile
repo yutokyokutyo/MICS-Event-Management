@@ -18,6 +18,7 @@ gem 'jbuilder',     '2.4.1'
 gem 'bootstrap-sass', '3.3.6'
 gem "gmaps4rails"
 gem "geocoder"
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
