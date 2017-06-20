@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #151515 url('app/assets/images/bg.png') no-repeat fixed left bottom;
+  background: #151515 url('../../images/mics_logo.png') no-repeat fixed left bottom;
   background-size: cover;
   color: #fff;
   text-align: center;
