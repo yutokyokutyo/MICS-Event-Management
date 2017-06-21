@@ -186,16 +186,16 @@ body {
   transform: scaleY(-1);
 }
 .work-box.tree::after {
-  background-image: image-url("mics_logo.png");
+  background-image: url('../images/mics_logo.png')
 }
 .work-box.building::after {
-  background-image: image-url("mics_logo.png");
+  background-image: url('../images/mics_logo.png')
 }
 .work-box.lake::after {
-  background-image: image-url("mics_logo.png");
+  background-image: url('../images/mics_logo.png')
 }
 .work-box.sky::after {
-  background-image: image-url("mics_logo.png");
+  background-image: url('../images/mics_logo.png')
 }
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
