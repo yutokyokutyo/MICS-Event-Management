@@ -19,6 +19,8 @@
   <div class="col-md-8">
     <ol class="users">
       <%= render @joiners %>
+      <%# TODO: id を変数にして存在しているidの数分回してidを入れていく %>
+      <%= image_tag @joiners.find_by(id: 1).image %>
     </ol>
       <%= will_paginate @joiners %>
   </div>
