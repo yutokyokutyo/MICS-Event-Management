@@ -7,6 +7,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     callback_from :twitter
   end
 
+  def google_oauth2
+    callback_from :google
+  end
+
   def failure
     redirect_to root_path
   end
