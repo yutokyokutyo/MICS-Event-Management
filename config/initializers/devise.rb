@@ -273,4 +273,5 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET'],
                     callback_url: ENV['FACEBOOK_CALLBACK_URL']
+  config.omniauth :twitter, ENV['TWITTER_APP_KEY'], ENV['TWITTER_APP_SECRET']
 end

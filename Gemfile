@@ -19,6 +19,7 @@ gem 'bootstrap-sass', '3.3.6'
 gem "gmaps4rails"
 gem "geocoder"
 gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 gem 'dotenv-rails'
 
 group :development, :test do
